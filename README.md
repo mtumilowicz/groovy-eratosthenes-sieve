@@ -19,5 +19,20 @@ Used groovy features (examples in `OperationsTest`):
     ```
 * overloaded `-` on lists
     ```
-    
+    expect:
+    [1] - 1 == []    
     ```
+* step
+    ```
+    expect:
+    (1..10).step(5) == [1, 6]    
+    ```
+    
+and the algorithm is a combination of features mentioned above:
+```
+static def get(limit) {
+    def sieve = 2..limit
+    (2..Math.sqrt(limit)).each { k -> sieve -= ((2*k)..(sieve.last()+1)).step(k) }
+    return sieve
+}
+```
