@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/groovy-eratosthenes-sieve.svg?branch=master)](https://travis-ci.com/mtumilowicz/groovy-eratosthenes-sieve)
+
 # groovy-eratosthenes-sieve
 Implementation of eratosthenes sieve in Groovy.
 
