@@ -30,7 +30,7 @@ Used groovy features (examples in `OperationsTest`):
     (1..10).step(5) == [1, 6]    
     ```
     
-and the algorithm is a combination of features mentioned above:
+and the algorithm is a simple combination of features mentioned above:
 ```
 static def get(limit) {
     def sieve = 2..limit
